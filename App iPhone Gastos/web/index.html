@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#164038">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="SaldoCerto">
+    <title>SaldoCerto</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css?v=7">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Controle mensal</p>
+          <h1>SaldoCerto</h1>
+        </div>
+        <div class="month-chip" id="monthLabel">Mes atual</div>
+      </header>
+
+      <section class="status-panel" id="statusPanel">
+        <div class="status-copy">
+          <div class="status-icon" id="healthIcon" aria-hidden="true">OK</div>
+          <div>
+            <h2 id="healthTitle">Ritmo saudavel</h2>
+            <p id="healthSubtitle">Informe sua renda para comecar.</p>
+          </div>
+        </div>
+        <div class="status-grid">
+          <div>
+            <span>Saldo restante</span>
+            <strong id="remainingBudget">R$ 0,00</strong>
+          </div>
+          <div>
+            <span>Pode gastar hoje</span>
+            <strong id="dailyLimit">R$ 0,00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics-grid" aria-label="Resumo financeiro">
+        <article class="metric-card">
+          <span>Renda total</span>
+          <strong id="totalIncome">R$ 0,00</strong>
+          <small>Salario mais entradas extras</small>
+        </article>
+        <article class="metric-card">
+          <span>Renda extra</span>
+          <strong id="extraIncomeTotal">R$ 0,00</strong>
+          <small>Entradas avulsas do mes</small>
+        </article>
+        <article class="metric-card">
+          <span>Orcamento do mes</span>
+          <strong id="monthlyBudget">R$ 0,00</strong>
+          <small>Depois dos fixos e da reserva</small>
+        </article>
+        <article class="metric-card">
+          <span>Gasto no mes</span>
+          <strong id="spentMonth">R$ 0,00</strong>
+          <small>Total lancado no periodo atual</small>
+        </article>
+        <article class="metric-card">
+          <span>Meta diaria ideal</span>
+          <strong id="idealDaily">R$ 0,00</strong>
+          <small>Media para atravessar o mes</small>
+        </article>
+        <article class="metric-card">
+          <span>Dias restantes</span>
+          <strong id="remainingDays">0</strong>
+          <small>Incluindo hoje</small>
+        </article>
+      </section>
+
+      <section class="panel rule-panel">
+        <div class="section-title">
+          <h2>Regra 50/30/20</h2>
+          <p>Necessidades, desejos e reserva comparados com sua renda.</p>
+        </div>
+        <div class="rule-grid" id="ruleGrid"></div>
+      </section>
+
+      <section class="panel advice-panel">
+        <div class="section-title">
+          <h2>Avisos e dicas</h2>
+          <p>Orientacoes simples para manter o mes sob controle.</p>
+        </div>
+        <div class="advice-list" id="adviceList"></div>
+      </section>
+
+      <section class="workspace">
+        <form class="panel" id="settingsForm">
+          <div class="section-title">
+            <h2>Planejamento</h2>
+            <p>Base do salario, fixos e reserva.</p>
+          </div>
+          <label>
+            <span>Salario mensal</span>
+            <input inputmode="decimal" autocomplete="off" name="salary" placeholder="0,00">
+          </label>
+          <label>
+            <span>Contas fixas do mes</span>
+            <input inputmode="decimal" autocomplete="off" name="fixedCosts" placeholder="0,00">
+          </label>
+          <label>
+            <span>Quanto quer guardar</span>
+            <input inputmode="decimal" autocomplete="off" name="savingsGoal" placeholder="0,00">
+          </label>
+          <button class="primary-button" type="submit">Salvar planejamento</button>
+        </form>
+
+        <form class="panel" id="incomeForm">
+          <div class="section-title">
+            <h2>Lancar renda extra</h2>
+            <p>Registre entradas avulsas do mes.</p>
+          </div>
+          <label>
+            <span>Descricao</span>
+            <input name="title" autocomplete="off" placeholder="Ex: freela">
+          </label>
+          <label>
+            <span>Valor</span>
+            <input inputmode="decimal" autocomplete="off" name="amount" placeholder="0,00">
+          </label>
+          <label>
+            <span>Data</span>
+            <input type="date" name="date">
+          </label>
+          <button class="income-button" type="submit">Adicionar renda</button>
+        </form>
+
+        <form class="panel" id="expenseForm">
+          <div class="section-title">
+            <h2>Lancar gasto</h2>
+            <p>Registre despesas variaveis.</p>
+          </div>
+          <label>
+            <span>Descricao</span>
+            <input name="title" autocomplete="off" placeholder="Ex: mercado">
+          </label>
+          <label>
+            <span>Valor</span>
+            <input inputmode="decimal" autocomplete="off" name="amount" placeholder="0,00">
+          </label>
+          <div class="split-row">
+            <label>
+              <span>Categoria</span>
+              <select name="category"></select>
+            </label>
+            <label>
+              <span>Data</span>
+              <input type="date" name="date">
+            </label>
+          </div>
+          <button class="secondary-button" type="submit">Adicionar despesa</button>
+        </form>
+      </section>
+
+      <section class="panel insights-panel">
+        <div class="section-title">
+          <h2>Resumo por categoria</h2>
+          <p>Onde o dinheiro esta indo neste mes.</p>
+        </div>
+        <div class="category-bars" id="categoryBars"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title row-title">
+          <div>
+            <h2>Rendas extras deste mes</h2>
+            <p>Entradas avulsas salvas neste aparelho.</p>
+          </div>
+          <button class="ghost-button" type="button" id="clearIncomeButton">Limpar rendas</button>
+        </div>
+        <div class="income-list" id="incomeList"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title row-title">
+          <div>
+            <h2>Despesas deste mes</h2>
+            <p>Ultimos lancamentos salvos neste aparelho.</p>
+          </div>
+          <button class="ghost-button" type="button" id="clearMonthButton">Limpar mes</button>
+        </div>
+        <div class="expense-list" id="expenseList"></div>
+      </section>
+    </main>
+
+    <script src="app.js?v=7"></script>
+  </body>
+</html>

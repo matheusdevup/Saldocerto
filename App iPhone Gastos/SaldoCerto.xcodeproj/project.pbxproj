@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B2C3D41F00000100000001 /* SaldoCertoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41F00000200000001 /* SaldoCertoApp.swift */; };
+		A1B2C3D41F00000100000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41F00000200000002 /* ContentView.swift */; };
+		A1B2C3D41F00000100000003 /* FinanceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41F00000200000003 /* FinanceStore.swift */; };
+		A1B2C3D41F00000100000004 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41F00000200000004 /* Models.swift */; };
+		A1B2C3D41F00000100000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D41F00000200000005 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D41F00000200000000 /* SaldoCerto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaldoCerto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D41F00000200000001 /* SaldoCertoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaldoCertoApp.swift; sourceTree = "<group>"; };
+		A1B2C3D41F00000200000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1B2C3D41F00000200000003 /* FinanceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceStore.swift; sourceTree = "<group>"; };
+		A1B2C3D41F00000200000004 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A1B2C3D41F00000200000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B2C3D41F00000200000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3D41F00000300000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C3D41F00000400000000 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D41F00000400000001 /* SaldoCerto */,
+				A1B2C3D41F00000400000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D41F00000400000001 /* SaldoCerto */ = {
+			isa = PBXGroup;
+			path = SaldoCerto;
+			sourceTree = "<group>";
+			children = (
+				A1B2C3D41F00000200000001 /* SaldoCertoApp.swift */,
+				A1B2C3D41F00000200000002 /* ContentView.swift */,
+				A1B2C3D41F00000200000003 /* FinanceStore.swift */,
+				A1B2C3D41F00000200000004 /* Models.swift */,
+				A1B2C3D41F00000200000005 /* Assets.xcassets */,
+				A1B2C3D41F00000200000006 /* Info.plist */,
+			);
+		};
+		A1B2C3D41F00000400000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D41F00000200000000 /* SaldoCerto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D41F00000500000000 /* SaldoCerto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D41F00000600000000 /* Build configuration list for PBXNativeTarget "SaldoCerto" */;
+			buildPhases = (
+				A1B2C3D41F00000700000000 /* Sources */,
+				A1B2C3D41F00000300000000 /* Frameworks */,
+				A1B2C3D41F00000800000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaldoCerto;
+			productName = SaldoCerto;
+			productReference = A1B2C3D41F00000200000000 /* SaldoCerto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C3D41F00000900000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A1B2C3D41F00000500000000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D41F00000A00000000 /* Build configuration list for PBXProject "SaldoCerto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D41F00000400000000;
+			productRefGroup = A1B2C3D41F00000400000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D41F00000500000000 /* SaldoCerto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D41F00000800000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D41F00000100000005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3D41F00000700000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D41F00000100000001 /* SaldoCertoApp.swift in Sources */,
+				A1B2C3D41F00000100000002 /* ContentView.swift in Sources */,
+				A1B2C3D41F00000100000003 /* FinanceStore.swift in Sources */,
+				A1B2C3D41F00000100000004 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3D41F00000B00000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SaldoCerto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.saldocerto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1B2C3D41F00000B00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SaldoCerto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.saldocerto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1B2C3D41F00000C00000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B2C3D41F00000C00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3D41F00000600000000 /* Build configuration list for PBXNativeTarget "SaldoCerto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D41F00000B00000000 /* Debug */,
+				A1B2C3D41F00000B00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D41F00000A00000000 /* Build configuration list for PBXProject "SaldoCerto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D41F00000C00000000 /* Debug */,
+				A1B2C3D41F00000C00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B2C3D41F00000900000000 /* Project object */;
+}

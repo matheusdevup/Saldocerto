@@ -1,0 +1,9 @@
+{
+  "name": "SaldoCerto",
+  "short_name": "SaldoCerto",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#edf3ee",
+  "theme_color": "#164038",
+  "icons": []
+}
